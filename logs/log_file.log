@@ -1,0 +1,12 @@
+2025-10-27 13:43:04.711 | ERROR    | ai_index:check_token:84 - Token 验证失败: 'Users' object has no attribute 'enterprise_id'
+2025-10-27 13:43:32.495 | ERROR    | ai_index:check_token:84 - Token 验证失败: 'Users' object has no attribute 'enterprise_id'
+2025-10-29 14:14:26.496 | ERROR    | task.start_evaluation:start_evaluation:63 - start evaluation task error: 'QuestionBank' object has no attribute 'execute'
+2025-10-29 14:22:04.364 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
+2025-10-29 14:22:04.600 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
+2025-10-29 14:22:04.855 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
+2025-10-29 14:22:13.976 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-10-29 14:22:15.283 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-10-29 14:22:18.899 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-10-29 14:31:01.590 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-10-29 14:31:06.961 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-10-29 14:31:55.793 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
