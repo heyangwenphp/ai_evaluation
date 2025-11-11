@@ -139,6 +139,7 @@ def GetEvaluationDetail(evaluation_id: int, user: Users = Depends(deps.get_curre
         answer_list.sort(key=lambda x: float(x['total_score_rate'].rstrip('%')), reverse=True)
 
         proportion_list = []
+
         for dim, scores in dimension_total_scores.items():
             domestic_avg = scores['domestic'] / domestic_model_count if domestic_model_count > 0 else 0
             foreign_avg = scores['foreign'] / domestic_model_count if domestic_model_count > 0 else 0
