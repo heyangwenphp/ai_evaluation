@@ -73,5 +73,13 @@ CREATE TABLE `lv_dialogue_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='对话历史表';
 
 
-还要增加一组数据proportion_list，proportion_list的值是[{"dimension":"dimension","domestic_model_total_score":6.00,"foreign_models_total_score":0}],
-其中domestic_model_total_score是国内模型的总得分除以国内模型数量，foreign_models_total_score是国外模型的总得分除以国内模型数量。model_info.types为0的是国内模型，为1的是国外模型
+CREATE TABLE `lv_question_analyze` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `question_id` int(11) NOT NULL COMMENT '对话问题id',
+  `analysis_results` text NOT NULL COMMENT '分析结果',
+  `is_del` tinyint(1) DEFAULT '0' COMMENT '0正常 1 删除',
+  `createTime` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updateTime` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='分析表';
+

@@ -1,12 +1,39 @@
-2025-10-27 13:43:04.711 | ERROR    | ai_index:check_token:84 - Token 验证失败: 'Users' object has no attribute 'enterprise_id'
-2025-10-27 13:43:32.495 | ERROR    | ai_index:check_token:84 - Token 验证失败: 'Users' object has no attribute 'enterprise_id'
-2025-10-29 14:14:26.496 | ERROR    | task.start_evaluation:start_evaluation:63 - start evaluation task error: 'QuestionBank' object has no attribute 'execute'
-2025-10-29 14:22:04.364 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
-2025-10-29 14:22:04.600 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
-2025-10-29 14:22:04.855 | ERROR    | utils.ChatModel:get_agent_factory:105 - 使用大模型错误：None
-2025-10-29 14:22:13.976 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
-2025-10-29 14:22:15.283 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
-2025-10-29 14:22:18.899 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
-2025-10-29 14:31:01.590 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
-2025-10-29 14:31:06.961 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
-2025-10-29 14:31:55.793 | ERROR    | task.start_evaluation:start_evaluation_thread:98 - start_evaluation_thread error: 'QuestionAnswer' object has no attribute 'execute'
+2025-11-17 15:45:31.334 | ERROR    | index.question:GetEvaluationList:71 - 获取测评列表异常：'dict' object has no attribute 'total'
+2025-11-17 15:46:55.728 | ERROR    | index.question:GetEvaluationList:71 - 获取测评列表异常：'total'
+2025-11-17 15:47:48.841 | ERROR    | index.question:GetEvaluationList:70 - 获取测评列表异常：'total'
+2025-11-18 14:28:01.256 | ERROR    | ai_index:check_token:76 - Token 验证失败: Signature has expired.
+2025-11-20 11:12:33.515 | WARNING  | index.ws:websocket_endpoint:49 - 用户 1 断开连接：1006 - 
+2025-11-20 11:15:11.577 | WARNING  | index.ws:websocket_endpoint:55 - 用户 1 断开连接：1006 - 
+2025-11-20 11:16:04.751 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 断开连接：1006 - 
+2025-11-20 11:17:58.735 | WARNING  | index.ws:websocket_endpoint:72 - 用户 1 断开连接：1006 - 
+2025-11-20 11:18:32.484 | WARNING  | index.ws:websocket_endpoint:72 - 用户 1 断开连接：1006 - 
+2025-11-20 11:25:00.549 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1012 - 
+2025-11-20 11:25:50.061 | WARNING  | utils.WebSocketManager:send_to_user:58 - 跳过向用户 '1' 的连接推送，因为其状态为非连接: WebSocketState.CONNECTED
+2025-11-20 11:27:34.682 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1012 - 
+2025-11-20 12:41:01.988 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1006 - 
+2025-11-20 12:41:12.596 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1006 - 
+2025-11-20 12:55:10.554 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1012 - 
+2025-11-20 12:55:45.830 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1006 - 
+2025-11-20 12:57:19.410 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1006 - 
+2025-11-20 12:57:43.373 | WARNING  | index.ws:websocket_endpoint:65 - 用户 1 断开连接：1006 - 
+2025-11-20 13:00:01.839 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:00:10.186 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1001 - 
+2025-11-20 13:00:11.264 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:01:16.286 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1012 - 
+2025-11-20 13:01:37.941 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:02:45.837 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:02:48.891 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1001 - 
+2025-11-20 13:02:48.894 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1001 - 
+2025-11-20 13:02:50.100 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:03:17.755 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1012 - 
+2025-11-20 13:03:17.756 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1012 - 
+2025-11-20 13:04:17.000 | WARNING  | index.ws:websocket_endpoint:59 - 用户 1 发送了非 JSON 格式的消息。
+2025-11-20 13:04:28.082 | WARNING  | utils.WebSocketManager:send_to_user:42 - 推送失败：在连接管理器中未找到用户 '1' 的任何 WebSocket 连接。
+2025-11-20 13:15:47.788 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1012 - 
+2025-11-20 13:15:47.793 | WARNING  | index.ws:websocket_endpoint:64 - 用户 1 断开连接：1012 - 
+2025-11-20 13:17:28.328 | WARNING  | index.ws:websocket_endpoint:59 - 用户 '1' 发送了非 JSON 格式的消息。
+2025-11-20 13:18:04.419 | WARNING  | index.ws:websocket_endpoint:63 - 用户 '1' 断开连接。
+2025-11-20 13:18:19.080 | WARNING  | index.ws:websocket_endpoint:59 - 用户 '1' 发送了非 JSON 格式的消息。
+2025-11-20 13:20:10.205 | WARNING  | index.ws:websocket_endpoint:63 - 用户 '1' 断开连接。
+2025-11-20 13:20:13.419 | WARNING  | index.ws:websocket_endpoint:63 - 用户 '1' 断开连接。
+2025-11-20 13:20:13.501 | WARNING  | index.ws:websocket_endpoint:63 - 用户 '1' 断开连接。

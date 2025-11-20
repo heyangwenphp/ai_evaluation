@@ -27,7 +27,7 @@ bar = (
     .add_yaxis("摄像镜头效果", y_data["摄像镜头效果"])
     .add_yaxis("处理器负载表现", y_data["处理器负载表现"])
     .set_global_opts(
-        title_opts=opts.TitleOpts(title="产品性能对比", subtitle="多维度体验指标"),
+        title_opts=opts.TitleOpts(title="产品性能对比"),
         xaxis_opts=opts.AxisOpts(axislabel_opts={"rotate": 20}),
         yaxis_opts=opts.AxisOpts(name="平均得分 (%)"),
         legend_opts=opts.LegendOpts(pos_top="5%"),

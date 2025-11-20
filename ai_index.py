@@ -6,7 +6,7 @@ from jose import jwt
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 from core.config import settings
-from index import user, files, columns, big_models, question
+from index import user, files, columns, big_models, question, notify, ws
 from models.users import Users as User
 from utils.logger import logger
 
@@ -40,6 +40,10 @@ app.add_middleware(
 
 @app.middleware("http")
 async def check_token(request: Request, call_next):
+    logger.debug(f"浏览器请求路径： {request.url.path}")
+    if request.url.path.startswith("/Index/push"):
+        logger.debug("ws请求放行")
+        return await call_next(request)  # 放行 WebSocket
     path = {'/Index/Login', '/Index/Register','/Index/GetBigModelsList','/'}
 
     host = request.headers.get("x-forwarded-host") or request.headers.get("host")
@@ -84,6 +88,9 @@ app.include_router(big_models.router, prefix="/Index")
 app.include_router(question.router, prefix="/Index")
 app.include_router(files.router, prefix="/Index")
 app.include_router(columns.router, prefix="/Index")
+app.include_router(notify.router, prefix="/Index")
+app.include_router(ws.router, prefix="/Index")
+
 
 if __name__ == "__main__":
     import uvicorn

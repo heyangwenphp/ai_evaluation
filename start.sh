@@ -11,4 +11,3 @@ nohup gunicorn -w 5  -k uvicorn.workers.UvicornWorker ai_index:app -b 0.0.0.0:70
 nohup python3 demo.py > logs/demo.log 2>&1 &
 echo "启动服务结束"
 echo "启动成功"
-

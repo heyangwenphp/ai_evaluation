@@ -38,6 +38,14 @@ class Question(BaseModel):
     def del_question(cls, file_id: int):
         return Question.update(is_del=1).where(cls.id == file_id).execute()
 
+    # 获取用户测评列表
+    @classmethod
+    def fetch_user_questions(cls, user_id:int,page: int = 1, page_size: int = 20):
+        db = cls.select().where(cls.is_del == 0).where(cls.user_id == user_id)
+        task_list, paginate = paginator(db, page, page_size, "createTime desc")
+
+        return task_list, paginate
+
 
 
 
